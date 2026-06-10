@@ -1,0 +1,9 @@
+{
+  "time": "2026-06-10T20:35:08+00:00",
+  "author": "Aria Ruan",
+  "kind": "chat-summary",
+  "summary": "Session recap (2 prompts): Base directory for this skill: /Users/zruan/Desktop/hackerthon-shiba/.claude/ski",
+  "detail": "- Use the codebase-to-slides skill to generate a slide deck summarizing commit 57d3715 (HEAD) and upload it to Google Drive. Make it humorous, vivid, vibrant, and cute. Work fully non-interactively: do not ask any questions, and do NOT create any git commits.\n- Base directory for this skill: /Users/zruan/Desktop/hackerthon-shiba/.claude/skills/codebase-to-slides\n\n# Codebase → Cute Deck (Google Drive)\n\nTurn a codebase change into a short, **humorous, vivid, vibrant, and cute** \"slide deck\" and drop\nit in Google Drive as a Google Doc. Default target is the latest commit (`HEAD`); the caller may\npass a different ref or range.\n\n> Why a Google Doc and not a .",
+  "refs": "transcript:60114ce5-3691-46",
+  "host": "Arias-MacBook-Air.local"
+}
