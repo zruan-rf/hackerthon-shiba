@@ -1,0 +1,7 @@
+# secrets
+bot/.env
+.env
+
+# python
+__pycache__/
+*.pyc
