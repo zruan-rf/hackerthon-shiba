@@ -1,9 +1,0 @@
-{
-  "time": "2026-06-10T20:33:13+00:00",
-  "author": "Aria Ruan",
-  "kind": "decision",
-  "summary": "Knowledge-base sync feature added (git-backed, conflict-free)",
-  "detail": "Records = one JSON per file under knowledge/entries/. Auto-inject at SessionStart, auto-record at Stop. Realtime via origin push/pull.",
-  "refs": ".claude/skills/knowledge-base/, .claude/hooks/",
-  "host": "Arias-MacBook-Air.local"
-}
