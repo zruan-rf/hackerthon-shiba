@@ -7,6 +7,10 @@ ROOT="${CLAUDE_PROJECT_DIR:-$(git rev-parse --show-toplevel 2>/dev/null)}"
 SCRIPT="$ROOT/.claude/skills/knowledge-base/scripts/knowledge.py"
 [ -f "$SCRIPT" ] || exit 0
 
+# Don't record the auto-slides headless runs (they set this flag) — otherwise every
+# commit's bot slide-generation session would spam the shared knowledge base.
+[ -n "$CLAUDE_SLIDES_HOOK" ] && exit 0
+
 INPUT="$(cat)"
 TRANSCRIPT="$(printf '%s' "$INPUT" | python3 -c 'import sys,json
 try:
